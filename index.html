@@ -13,9 +13,65 @@
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+
+		<style>
+            .modalDialog {
+				position: fixed;
+				font-family: Arial, Helvetica, sans-serif;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				left: 0;
+				background: rgba(0,0,0,0.8);
+				z-index: 99999;
+				opacity:0;
+				-webkit-transition: opacity 400ms ease-in;
+				-moz-transition: opacity 400ms ease-in;
+				transition: opacity 400ms ease-in;
+				pointer-events: none;
+			}
+
+			.modalDialog:target {
+				opacity:1;
+				pointer-events: auto;
+			}
+
+			.modalDialog > div {
+				width: 800px;
+				position: relative;
+				margin: 2% auto;
+				height: 600px;
+				padding: 5px 20px 13px 20px;
+				border-radius: 10px;
+				background: #fff;
+				background: -moz-linear-gradient(#fff, #999);
+				background: -webkit-linear-gradient(#fff, #999);
+				background: -o-linear-gradient(#fff, #999);
+			}
+
+			.close {
+				background: #606061;
+				color: #FFFFFF;
+				line-height: 25px;
+				position: absolute;
+				right: -12px;
+				text-align: center;
+				top: -10px;
+				width: 24px;
+				text-decoration: none;
+				font-weight: bold;
+				-webkit-border-radius: 12px;
+				-moz-border-radius: 12px;
+				border-radius: 12px;
+				-moz-box-shadow: 1px 1px 3px #000;
+				-webkit-box-shadow: 1px 1px 3px #000;
+				box-shadow: 1px 1px 3px #000;
+			}
+
+.close:hover { background: #00d9ff; }
+		</style>
 	</head>
 	<body id="top">
-
 		<!-- Header -->
 			<header id="header">
 				<div class="content">
@@ -56,41 +112,53 @@
 				</header>
 				<div class="inner alt">
 					<section class="spotlight">
-						<div class="image"><img src="images/pic01.jpg" alt="" /></div>
+						<div class="image"><a href="#bargainUae"><img src="images/projects/bargain/bargainuae.png" alt="" /></a></div>
 						<div class="content">
-							<h3>Magna sed ultrices</h3>
-							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
+							<h3>Bargain Car Rental</h3>
+							<p>From Online booking to PDF format Agreement. Bargain Car Rental Management System is a complete Portal for a car rent Company based in UAE. The tools used in development of this portal are PHP, MySQL, HTML and etc</p>
 						</div>
+
+						<div id="bargainUae" class="modalDialog">
+						<div>
+							<a href="#close" title="Close" class="close">X</a>
+							<h2>Bargain Car Rental</h2>
+							<div  style="width:700px;height:490px;overflow-x:scroll;white-space: nowrap;overflow-y:hidden">
+							<img src="images/projects/bargain/bargainuae.png" alt="" style="width:700px;height:480px;" />
+							<div>
+							<!-- <p>This is a sample modal box that can be created using the powers of CSS3.</p>
+							<p>You could do a lot of things here like have a pop-up ad that shows when your website loads, or create a login/register form for users.</p> -->
+						</div>
+					</div>
 					</section>
 					<section class="spotlight">
 						<div class="image"><img src="images/pic02.jpg" alt="" /></div>
 						<div class="content">
-							<h3>Ultrices nullam aliquam</h3>
-							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
+							<h3>The Services Company</h3>
+							<p>From Online booking to PDF format Agreement. Bargain Car Rental Management System is a complete Portal for a car rent Company based in UAE. The tools used in development of this portal are PHP, MySQL, HTML and etc</p>
 						</div>
 					</section>
 					<section class="spotlight">
 						<div class="image"><img src="images/pic03.jpg" alt="" /></div>
 						<div class="content">
-							<h3>Aliquam sed magna</h3>
+							<h3>Taj Clinics</h3>
 							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
 						</div>
 					</section>
-					<section class="spotlight">
+					<!-- <section class="spotlight">
 						<div class="image"><img src="images/pic03.jpg" alt="" /></div>
 						<div class="content">
-							<h3>Aliquam sed magna</h3>
-							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
+							<h3>Excell to Wordpress Database Import Plugin</h3>
+							<p>If you search for Plugin to save Custom Excell data directly into your wordpress Database you will hardly founnd any. Coded a plugin for directly importing custom data to wordpress database. </p>
 						</div>
-					</section>
+					</section> -->
 					<section class="spotlight">
-						<div class="image"><img src="images/pic03.jpg" alt="" /></div>
+						<div class="image"><img src="images/projects/gamerzz/gamerzz.png" alt="" /></div>
 						<div class="content">
-							<h3>Aliquam sed magna</h3>
-							<p>Morbi mattis ornare ornare. Duis quam turpis, gravida at leo elementum elit fusce accumsan dui libero, quis vehicula lectus ultricies eu. In convallis amet leo non sapien iaculis efficitur consequat lorem ipsum.</p>
+							<h3>Gamerzz</h3>
+							<p>Gamerzz is Based on HTML, CSS, JAVASCRIPT,AJAX, PHP and MySQL. Its a full featured portal for game downloading with functionalities like moderated comments, Rating system, Etc </p>
 						</div>
 					</section>
-					<section class="special">
+					<!-- <section class="special">
 						<ul class="icons labeled">
 							<li><span class="icon fa-camera-retro"><span class="label">Ipsum lorem accumsan</span></span></li>
 							<li><span class="icon fa-refresh"><span class="label">Sed vehicula elementum</span></span></li>
@@ -98,7 +166,7 @@
 							<li><span class="icon fa-code"><span class="label">Lorem nullam tempus</span></span></li>
 							<li><span class="icon fa-desktop"><span class="label">Adipiscing amet sapien</span></span></li>
 						</ul>
-					</section>
+					</section> -->
 				</div>
 			</section>
 
@@ -106,8 +174,7 @@
 			<section id="three" class="wrapper style2 special" style='background-color:#636162;color:white;background-image: url("images/overlay.png"), url("images/pattern-size1.svg");'>
 				<header class="major">
 					<h2 style="color:white">What i Beleive</h2>
-					<p>Gravida at leo elementum elit fusce accumsan dui libero, quis vehicula<br />
-					lectus ultricies eu. In convallis amet leo sapien iaculis efficitur.</p>
+					<p>Success is not built on success. It's built on failure. It's built on frustration. <br>Sometimes its built on catastrophe.</p>
 				</header>
 				<!-- <ul class="actions">
 					<li><a href="#" class="button special icon fa-download">Download</a></li>
